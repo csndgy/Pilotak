@@ -8,21 +8,23 @@ namespace ConsoleApp1
 {
     internal class Pilota
     {
-        string nev { get; set; }
-        string szuletesiDatum{ get; set; }
-        string nemzetiseg { get; set; }
-        int rajtszam { get; set; }
-        int ev { get; set; }
+        string nev;
+        string szuletesidatum;
+        string nemzetiseg;
+        int rajtszam;
+        int ev;
 
-
-        public Pilota(string elsosor)
+        public Pilota(string nev, string szuletesidatum, string nemzetiseg, int rajtszam, int ev)
         {
-            var sor = elsosor.Split(";");
-            this.nev = sor[0];
-            this.szuletesiDatum = sor[1];
-            this.nemzetiseg = sor[2];
-            this.rajtszam = int.Parse(sor[3]);
-            this.ev = int.Parse(sor[4]);
+            this.nev = nev;
+            this.szuletesidatum = szuletesidatum;
+            this.nemzetiseg = nemzetiseg;
+            this.rajtszam = rajtszam;
+            this.ev = ev;
         }
+        public string Nev { get => nev; }
+        public string Szuletesidatum { get => szuletesidatum; }
+        public string Nemzetiseg { get => nemzetiseg; }
+        public int Rajtszam { get => rajtszam; }
     }
 }
