@@ -26,7 +26,6 @@ namespace ConsoleApp1
         public string Szuletesidatum { get => szuletesidatum; }
         public string Nemzetiseg { get => nemzetiseg; }
         public int Rajtszam { get => rajtszam; }
-
         public int Ev { get => ev; }
     }
 }
